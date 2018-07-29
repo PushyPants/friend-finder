@@ -1,5 +1,6 @@
-//The 'friends' object
-module.exports = [
+//The 'friends' data object
+module.exports = {
+    friendData : [
     {
         'name': 'Liam Hemsworth',
         'photo': 'http://www.femalefirst.co.uk/image-library/partners/bang/square/500/l/liam-hemsworth-05d1787927be7e43752e8f07ea0f23dc9512e422.jpg',
@@ -50,4 +51,7 @@ module.exports = [
         'photo': 'https://www.spotlighthair.com/images/Olivia-Munn-Dark-Brown-Straight-Long-Bob-Cut.jpg',
         'scores': [2,5,1,3,4,3,4,1,2,3]
     },
-];
+],
+
+newFriend: []
+}
