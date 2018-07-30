@@ -4,12 +4,12 @@ module.exports = {
     {
         'name': 'Liam Hemsworth',
         'photo': 'http://www.femalefirst.co.uk/image-library/partners/bang/square/500/l/liam-hemsworth-05d1787927be7e43752e8f07ea0f23dc9512e422.jpg',
-        'scores': [5,3,6,1,2,5,3,5,1,2]
+        'scores': [5,3,3,1,2,5,3,5,1,2]
     },
     {
         'name': 'Emilia Clarke',
         'photo': 'https://i.pinimg.com/736x/7a/9b/cf/7a9bcf5be506caf099163c3d9e65bd21--famous-celebrities-emilia-clarke.jpg',
-        'scores': [3,4,2,4,6,5,5,1,3,4]
+        'scores': [3,4,2,4,3,5,5,1,3,4]
     },
     {
         'name': 'Jason Bateman',
@@ -53,5 +53,6 @@ module.exports = {
     },
 ],
 
-newFriend: []
+newFriend: [],
+friendMatch: []
 }

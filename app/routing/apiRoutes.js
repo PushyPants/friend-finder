@@ -27,25 +27,22 @@ module.exports = function(app){
             //loop through each answer and find the difference
             element.scores.forEach(function(score, index){
                 let a = parseInt(score);
-                let b = parseInt(friends.newFriend[0].scores[index])
+                let newestFriend = friends.newFriend.length-1;
+                let b = parseInt(friends.newFriend[newestFriend].scores[index])
 
                 diffScore += diff(a,b)
             })
 
-            //push the difference to the array of differences
+            //push the total difference score to the array of differences
             diffArr.push(diffScore);
         })
 
-        console.log(diffArr)
-        console.log(Math.min(...diffArr))
-
+        //these narrow the values of the lowest score and match them with the correct object of the matched person
         let lowestVal = Math.min(...diffArr);
         let lowIndex = diffArr.indexOf(lowestVal)
-        console.log(`index of ${lowestVal} is ${lowIndex}`)
         let friendMatch = friends.friendData[lowIndex];
 
-        console.log(friendMatch.name)
-
+        friends.friendMatch.push(friendMatch);
 
     })
 
