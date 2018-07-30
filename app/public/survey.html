@@ -234,9 +234,11 @@
           $('#q10').val()
         ]
       };
-
+      
+      //Ajax call to post information to the API data set
       $.post('/api/friends', newFriend);
 
+      //Ajax request to pull information from the API data set
       $.get('api/friends', function (data) {
         let latestFriend = data.friendMatch.length - 1;
         let matchFriend = data.friendMatch[latestFriend];
